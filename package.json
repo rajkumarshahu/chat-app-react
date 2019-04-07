@@ -1,0 +1,49 @@
+{
+    "name": "chat-app",
+    "version": "1.0.0",
+    "engines": {
+        "node": "11.7.0"
+    },
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client-install": "npm install --prefix client",
+        "start": "node app.js",
+        "server": "nodemon app.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server \" \"npm run client \""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rajkumarshahu/chat-app.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rajkumarshahu/chat-app/issues"
+    },
+    "homepage": "https://github.com/rajkumarshahu/chat-app#readme",
+    "dependencies": {
+        "bcrypt": "^3.0.5",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.1.0",
+        "express": "^4.16.4",
+        "gravatar": "^1.8.0",
+        "jsonwebtoken": "^8.5.1",
+        "koa": "^2.7.0",
+        "koa-body": "^4.1.0",
+        "koa-body-parser": "^1.1.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0",
+        "koa-send": "^5.0.0",
+        "koa-static": "^5.0.0",
+        "mongoose": "^5.4.17",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "socket.io": "^2.2.0",
+        "validator": "^10.11.0"
+    },
+    "devDependencies": {}
+}
